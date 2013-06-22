@@ -5,7 +5,7 @@ wMenu's source code is currently hosted at [http://code.google.com/p/w-menu/sour
 
 This part of the article deals with compilation under a Windows environment.
 
-Thanks to JGE++, Wagic can be compiled for both Windows and the PSP. Compiling a Windows version helps a lot for debugging.
+Thanks to JGE++, wMenu can be compiled for both Windows and the PSP. Compiling a Windows version helps a lot for debugging.
 
 ===Compiling for Windows===
 
