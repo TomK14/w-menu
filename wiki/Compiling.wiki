@@ -35,7 +35,7 @@ To run wMenu on the PSP, you need to compile a new EBOOT.PBP. The method describ
   #  In the same directory, type "make" (and ENTER). It should create some files. The important one is named libjge300.a in the lib/psp/ folder. If there is no lib/psp/libjge300.a file in your JGE directory, or if this file is old, then something went bad.
   #  Go to the directory projects/wmenu with a DOS shell
   #  Type "make clean" (and ENTER)
-  #  Type "make" (and ENTER). This should create an EBOOT.PBP file in your projects/mtg folder. That's it!
+  #  Type "make" (and ENTER). This should create an EBOOT.PBP file in your projects/wmenu folder. That's it!
 
 _Note: If there haven't been any changes to the JGE library itself, then you obviously don't need to recreate it each time, so steps 3 and 4 are not necessary in this case. If you're not sure whether you need to compile JGE, then it's better to do it, to be on the safe side._
 
