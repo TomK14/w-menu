@@ -105,11 +105,14 @@ endef
 PrecompiledHeader.h.gch: ../../projects/wmenu/include/PrecompiledHeader.h
 	$(compile)
 
-$(OBJS): objs/%.o: src/%.cpp PrecompiledHeader.h.gch
+$(OBJS): objs/%.o: src/%.cpp PrecompiledHeader.h.gch objs
 	$(compile)
 
 $(DEPS): deps/%.d: src/%.cpp
 	@$(CXX) -MM $(CXXFLAGS) -MQ $(patsubst deps/%.d, objs/%.o, $(@)) -MQ $@ $< > $@
+
+objs:
+	mkdir -p $@
 
 .DEFAULT:
 	@echo $@ has been deleted : updating deps.
