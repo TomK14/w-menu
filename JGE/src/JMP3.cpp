@@ -155,7 +155,7 @@ JLOG("Start JMP3::load");
             m_fileName[len++] = '/';
             strcpy(m_fileName + len, filename.c_str());
          }else{
-            m_fileName[0] = NULL;
+            m_fileName[0] = 0;
          }
       }
 

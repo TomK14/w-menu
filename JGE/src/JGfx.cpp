@@ -18,7 +18,7 @@
 #include <pspdebug.h>
 #include <pspdisplay.h>
 #include <png.h>
-#include "../include/vram.h"
+#include "../include/psp/vram.h"
 #include "../include/JLogger.h"
 
 #include <sstream>

@@ -110,11 +110,14 @@ hge: $(TARGET_HGE)
 ifeq ($(TARGET_ARCHITECTURE),linux)
 
 
-$(TARGET_LIB): $(OBJS)
+$(TARGET_LIB): $(dir $(TARGET_LIB)) $(OBJS)
 	ar r $(TARGET_LIB) $(OBJS)
 
 $(TARGET_HGE): $(HGE_OBJS)
 	ar r $(TARGET_HGE) $(HGE_OBJS)
+
+$(dir $(TARGET_LIB)):
+	mkdir -p $@
 
 clean:
 	$(RM) -f $(OBJS) $(HGE_OBJS) Makefile.$(TARGET_ARCHITECTURE)
